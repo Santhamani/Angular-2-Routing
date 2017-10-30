@@ -1,0 +1,32 @@
+<div class="container">
+        <table class="table">
+          <thead class="thead-inverse">
+            <tr>
+              <!-- <th>#</th> -->
+              <th>ID</th>
+              <th>Name</th>
+              <th>Author</th>
+              <th>Price</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">{{book.id}}</th>
+              <td>{{book.name}}</td>
+              <td>{{book.author}}</td>
+              <td>{{book.price}}</td>
+              <td>{{book.description}}</td>
+            </tr>
+            </tbody>
+            </table>
+      </div>
+
+      <div class="container">
+          <button class="btn btn-success" (click)='goBack()'>Go Back</button>
+          <button class="btn btn-default" (click)='updateBook(book.id)'>Update Book</button>
+      </div>
+
+      <div class="container">
+          <a [routerLink]='["/buy-book"]'>Buy Book</a>
+      </div>

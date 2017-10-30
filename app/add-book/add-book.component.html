@@ -1,0 +1,47 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-centered">
+      <form>
+        <!-- <div class="row"> -->
+          <div class="form-group mb-3">
+            <label for="validationServer02">Name</label>
+            <input type="text" name="name" [(ngModel)]="book.name" class="form-control" id="validationServer02" placeholder="Book Name" required>
+          </div>
+        <!-- </div> -->
+        <!-- <div class="row"> -->
+          <div class="form-group mb-3">
+            <label for="validationServer03">Author</label>
+            <input type="text" name="author" [(ngModel)]="book.author" class="form-control" id="validationServer03" placeholder="Author" required>
+            <div class="invalid-feedback">
+              Please provide author name.
+            </div>
+          </div>
+          <!-- </div> -->
+          <!-- <div class="row"> -->
+          <div class="form-group mb-3">
+            <label for="validationServer04">Price</label>
+            <input type="text" name="price" [(ngModel)]="book.price" class="form-control" id="validationServer04" placeholder="Price" required>
+            <div class="invalid-feedback">
+              Please provide a valid price.
+            </div>
+          </div>
+          <!-- </div> -->
+          <!-- <div class="row"> -->
+          <div class="form-group mb-3">
+            <label for="validationServer05">Description</label>
+            <input type="text" name="description" [(ngModel)]="book.description" class="form-control" id="validationServer05" placeholder="Description of the Book" required>
+            <div class="invalid-feedback">
+              Please provide a valid description.
+            </div>
+          </div>
+        <!-- </div> -->
+        <!-- <div class="row"> -->
+            <div class="mb-3 button-centered">
+              <button class="btn btn-warning" (click)="addBook()">Add Book</button>
+            </div>  
+        <!-- </div> -->
+      </form>
+    </div>
+  </div>
+</div>

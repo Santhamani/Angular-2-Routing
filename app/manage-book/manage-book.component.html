@@ -1,0 +1,28 @@
+<div class="container">
+  <table class="table">
+    <thead class="thead-inverse">
+      <tr>
+        <!-- <th>#</th> -->
+        <th>ID</th>
+        <th>Name</th>
+        <!-- <th>Author</th>
+        <th>Price</th>
+        <th>Description</th> -->
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr  *ngFor='let book of books'>
+        <th scope="row">{{book.id}}</th>
+        <td>{{book.name}}</td>
+        <!-- <td>{{book.author}}</td>
+        <td>{{book.price}}</td>
+        <td>{{book.description}}</td> -->
+        <td><a (click)="remove(book.id)" class="btn btn-danger">Remove</a></td>
+        <td><a (click)="updateBook(book.id)">Update Details</a></td>
+      </tr>
+      </tbody>
+      </table>
+</div>
+<!-- <router-outlet></router-outlet> -->
